@@ -6,6 +6,7 @@ public class Vivienda {
 	private static int numero = 1;
 	private int codViv;
 	private double precio;
+	//añadir propietario tras crear su clase
 	private String dimensiones, direccion, estado, descripcion;
 	
 	public Vivienda (double precio, String dimensiones, String direccion, String estado, String descripcion){
