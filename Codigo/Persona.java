@@ -5,9 +5,9 @@ public class Persona {
 	
 	private static int numero = 1;
 	private int id;
-	private String nombre, dni, direccion, cuentaBancaria, email;
+	private String nombre, dni, direccion, cuentaBancaria, email, sexo;
 	
-	public Persona (String nombre, String dni, String direccion, String cuentaBancaria, String email){
+	public Persona (String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
 		
 		id = numero;
 		this.nombre = nombre;
@@ -15,6 +15,7 @@ public class Persona {
 		this.direccion = direccion;
 		this.cuentaBancaria = cuentaBancaria;
 		this.email = email;
+		this.sexo = sexo;
 		numero++;
 		
 	}
@@ -78,6 +79,18 @@ public class Persona {
 		
 	}
 	
+	public void setSexo (String sexo){
+		
+		this.sexo = sexo;
+		
+	}
+	
+	public String getSexo (){
+		
+		return sexo;
+		
+	}
+	
 	public void setID (int id){
 		
 		this.id = id;
@@ -92,7 +105,7 @@ public class Persona {
 	
 	public String toString(){
 		
-		return id +" - " +nombre +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email;
+		return id +" - " +nombre +"\nSexo: " +sexo +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email;
 		
 	}
 	
