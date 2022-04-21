@@ -1,15 +1,16 @@
 import java.util.*;
 import java.io.*;
 
-public class Persona {
+public abstract class Persona {
 	
 	private static int numero = 1;
-	private int id;
-	private String nombre, dni, direccion, cuentaBancaria, email, sexo;
+	protected int id, telefono;
+	protected String nombre, dni, direccion, cuentaBancaria, email, sexo;
 	
-	public Persona (String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
+	public Persona (int telefono, String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
 		
 		id = numero;
+		this.telefono = telefono;
 		this.nombre = nombre;
 		this.dni = dni;
 		this.direccion = direccion;
@@ -17,6 +18,18 @@ public class Persona {
 		this.email = email;
 		this.sexo = sexo;
 		numero++;
+		
+	}
+	
+	public void setTelefono (int telefono){
+		
+		this.telefono = telefono;
+		
+	}
+	
+	public int getTelefono (){
+		
+		return telefono;
 		
 	}
 	
@@ -38,7 +51,7 @@ public class Persona {
 		
 	}
 	
-	public String geDni (){
+	public String getDni (){
 		
 		return dni;
 		

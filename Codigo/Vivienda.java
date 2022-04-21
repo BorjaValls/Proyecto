@@ -6,7 +6,6 @@ public class Vivienda {
 	private static int numero = 1;
 	private int codViv;
 	private double precio;
-	//añadir propietario tras crear su clase
 	private String dimensiones, direccion, estado, descripcion;
 	
 	public Vivienda (double precio, String dimensiones, String direccion, String estado, String descripcion){
@@ -18,6 +17,18 @@ public class Vivienda {
 		this.estado = estado;
 		this.descripcion = descripcion;
 		numero++;
+		
+	}
+	
+	public void setCodViv (int codViv){
+		
+		this.codViv = codViv;
+		
+	}
+	
+	public int getCodViv (){
+		
+		return codViv;
 		
 	}
 	
@@ -81,7 +92,7 @@ public class Vivienda {
 		
 	}
 	
-	public String toString(){
+	public String mostrarViv(){
 		
 		return "Vivienda numero " +codViv +"\nDimensiones: " +dimensiones +"\nDireccion: " +direccion +"\nPrecio por noche: " +precio +"\nEstado: " +estado +"\nDescripcion: " +descripcion;
 		
