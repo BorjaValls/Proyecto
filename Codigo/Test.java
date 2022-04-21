@@ -22,12 +22,7 @@ public class Test {
 		lista.anyadir(y);
 		
 		System.out.println("");
-		System.out.println(x.mostrarVU());
-		System.out.println("");
-		
-		System.out.println("");
-		System.out.println(y.mostrarVU());
-		System.out.println("");
+		System.out.println(lista.mostrarLU());
 		System.out.println("");
 		
 		Usuario buscar = lista.buscarID(2);
