@@ -1,27 +1,27 @@
 import java.util.*;
 import java.io.*;
 
-public class Usuario extends Persona{
+public class ListaViviendas {
 	
 	private ArrayList <Vivienda> viviendas;
 	
-	public Usuario (int telefono, String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
-		super(telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
+	public ListaViviendas (){
+		
 		viviendas = new ArrayList ();
 		
 	}
 	
-	public void anyadirViv (Vivienda x){
+	public void anyadir (Vivienda x){
 		
 		viviendas.add(x);
 		
 	}
 	
-	public Vivienda buscarCodViv (int cv){
+	public Vivienda buscarCodViv (int id){
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == cv){
+			if (viviendas.get(i).getCodViv() == id){
 				
 				return viviendas.get(i);
 				
@@ -33,13 +33,13 @@ public class Usuario extends Persona{
 		
 	}
 	
-	public boolean eliminarCodViv (int cv){
+	public boolean eliminarCodViv (int id){
 		
 		int posicion = -1;
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == cv){
+			if (viviendas.get(i).getCodViv() == id){
 				
 				posicion = i;
 				
@@ -59,9 +59,9 @@ public class Usuario extends Persona{
 		
 	}
 	
-	public String mostrarVU(){
+	public String mostrarLV(){
 		
-		String cadena = id +" - " +nombre +"\nSexo: " +sexo +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email +"\n\n";
+		String cadena = "";
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			

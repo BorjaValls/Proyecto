@@ -8,6 +8,7 @@ public class Test {
 		//(int telefono, String nombre, String dni, String direccion, 
 		//String cuentaBancaria, String email, String sexo);
 		ListaUsuarios lista = new ListaUsuarios ();
+		ListaViviendas lista2 = new ListaViviendas ();
 		Usuario x = new Usuario (1234, "Borja", "2179N", "calle", "numerocuenta1", "email@email.com", "hombre");
 		Usuario y = new Usuario (9876, "Carlos", "7189J", "avenida", "2numerocuenta2", "2email@email.com2", "HOMBRE");
 		Vivienda casa1 = new Vivienda (50.21, "120 m2", "camino1", "ocupado", "descripcion1");
@@ -20,9 +21,16 @@ public class Test {
 		y.anyadirViv(casa3);
 		lista.anyadir(x);
 		lista.anyadir(y);
+		lista2.anyadir(casa1);
+		lista2.anyadir(casa2);
+		lista2.anyadir(casa3);
 		
 		System.out.println("");
 		System.out.println(lista.mostrarLU());
+		System.out.println("");
+		
+		System.out.println("");
+		System.out.println(lista2.mostrarLV());
 		System.out.println("");
 		
 		Usuario buscar = lista.buscarID(2);
