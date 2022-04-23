@@ -5,8 +5,7 @@ public class Test {
 	
 	public static void main (String[] args) {
 		
-		//(int telefono, String nombre, String dni, String direccion, 
-		//String cuentaBancaria, String email, String sexo);
+		
 		ListaUsuarios lista = new ListaUsuarios ();
 		ListaViviendas lista2 = new ListaViviendas ();
 		Usuario x = new Usuario (1234, "Borja", "2179N", "calle", "numerocuenta1", "email@email.com", "hombre");
@@ -14,8 +13,7 @@ public class Test {
 		Vivienda casa1 = new Vivienda (50.21, "120 m2", "camino1", "ocupado", "descripcion1");
 		Vivienda casa2 = new Vivienda (60.09, "110 m2", "camino2", "listo", "descripcion2");
 		Vivienda casa3 = new Vivienda (41.88, "115 m2", "camino3", "listo", "descripcion3");
-		//(double precio, String dimensiones, 
-		//String direccion, String estado, String descripcion){
+		
 		x.anyadirViv(casa1);
 		y.anyadirViv(casa2);
 		y.anyadirViv(casa3);
@@ -30,6 +28,10 @@ public class Test {
 		System.out.println("");
 		
 		System.out.println("");
+		System.out.println(x.mostrarVU());
+		System.out.println("");
+		
+		System.out.println("");
 		System.out.println(lista2.mostrarLV());
 		System.out.println("");
 		
@@ -37,6 +39,8 @@ public class Test {
 		Usuario buscar2 = lista.buscarNombre("borja");
 		boolean buscar3 = lista.eliminarID(1);
 		boolean buscar4 = lista.eliminarNombre("holas");
+		int aux = 2;
+		boolean buscar5 = y.eliminarCodViv(aux);
 		
 		System.out.println("");
 		if (buscar != null){
@@ -75,10 +79,31 @@ public class Test {
 			System.out.println("No se ha podido borrar Nombre");
 			
 		System.out.println("");	
+		if (buscar5 != false){
+			
+			lista2.eliminarCodViv2(aux);
+			System.out.println("Borrado con exito ID");
+		
+		}else
+		
+			System.out.println("No se ha podido borrar ID");
+			
+		System.out.println("");	
 		System.out.println("");
 		System.out.println("");
 		System.out.println(lista.mostrarLU());
 		
+		System.out.println("");
+		System.out.println(lista2.mostrarLV());
+		System.out.println("");
+		
 	}
+	
+	/*public static void elimUsviv (int id){
+		
+		
+		
+	}*/
+	
 }
 

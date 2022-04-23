@@ -3,27 +3,27 @@ import java.io.*;
 
 public class ListaViviendas {
 	
-	private ArrayList <Vivienda> viviendas;
+	private ArrayList <Vivienda> viviendas2;
 	
 	public ListaViviendas (){
 		
-		viviendas = new ArrayList ();
+		viviendas2 = new ArrayList ();
 		
 	}
 	
 	public void anyadir (Vivienda x){
 		
-		viviendas.add(x);
+		viviendas2.add(x);
 		
 	}
 	
-	public Vivienda buscarCodViv (int id){
+	public Vivienda buscarCodViv2 (int id){
 		
-		for (int i = 0; i < viviendas.size(); i++){
+		for (int i = 0; i < viviendas2.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == id){
+			if (viviendas2.get(i).getCodViv() == id){
 				
-				return viviendas.get(i);
+				return viviendas2.get(i);
 				
 			}
 			
@@ -33,13 +33,13 @@ public class ListaViviendas {
 		
 	}
 	
-	public boolean eliminarCodViv (int id){
+	public boolean eliminarCodViv2 (int id){
 		
 		int posicion = -1;
 		
-		for (int i = 0; i < viviendas.size(); i++){
+		for (int i = 0; i < viviendas2.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == id){
+			if (viviendas2.get(i).getCodViv() == id){
 				
 				posicion = i;
 				
@@ -53,7 +53,7 @@ public class ListaViviendas {
 			
 		}else
 		
-			viviendas.remove(posicion);
+			viviendas2.remove(posicion);
 		
 			return true;
 		
@@ -63,9 +63,9 @@ public class ListaViviendas {
 		
 		String cadena = "";
 		
-		for (int i = 0; i < viviendas.size(); i++){
+		for (int i = 0; i < viviendas2.size(); i++){
 			
-			cadena += viviendas.get(i).mostrarViv() +"\n\n";
+			cadena += viviendas2.get(i).mostrarViv() +"\n\n";
 			
 		}
 		
