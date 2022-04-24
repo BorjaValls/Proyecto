@@ -9,6 +9,8 @@ Lo único realizado que es completamente funcional es crear usuarios de la empre
 El proceder que ahora lo tengo claro es crear una base de datos para una empresa donde se puedan guardar datos de empleados, usuarios y clientes, gestionar las viviendas (o casas) en oferta y gestionar contratos. 
 Podría añadir gestión de Recursos Humanos y crear un calendario??? o las cosas que hagan en Recursos Humanos, pero principalmente dar de alta o baja.
 
+Todas las clases heredadas de Persona comparten el mismo tramo de ID, ninguno obtiene uno independiente de los otros.
+(No me gustaria que hubiese un Usuario, un Cliente y un Empleado con el mismo ID).
 
 Cosas por terminar:
 - Todos los diagramas UML.
