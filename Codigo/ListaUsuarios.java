@@ -143,6 +143,30 @@ public class ListaUsuarios {
 		
 	}
 	
+	public boolean prueba (int aux){
+		
+		int posicion = -1;
+		
+		for (int i = 0; i < usuarios.size(); i++){
+				
+			if (usuarios.get(i).eliminarCodViv(aux)){
+					
+				posicion = i;
+					
+			}
+				
+		}
+		
+		if (posicion == -1){
+			
+			return false;
+			
+		}else
+		
+			return true;
+		
+	}
+	
 	public String mostrarLU(){
 		
 		String cadena = "";

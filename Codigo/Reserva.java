@@ -68,9 +68,9 @@ public class Reserva {
 		
 	}
 	
-	public String toString(){
+	public String mostrarReserva(){
 		
-		return "Codigo de reserva " +codRerserva +"\nDuracion: " +duracion +"\nTipo de pago: " +tipoPago +"\nDetalles: " +detalles;
+		return "Codigo de reserva: " +codRerserva +"\nDuracion: " +duracion +"\nTipo de pago: " +tipoPago +"\nDetalles: " +detalles;
 		
 	}
 	

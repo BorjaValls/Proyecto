@@ -9,7 +9,7 @@ public class Cliente extends Persona{
 		
 	}
 	
-	public String mostrarEmpleado(){
+	public String mostrarCliente(){
 		
 		String cadena = "Cliente: " +"\n" +toString() +"\n\n";
 		

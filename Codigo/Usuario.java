@@ -61,7 +61,7 @@ public class Usuario extends Persona{
 	
 	public String mostrarVU(){
 		
-		String cadena = id +" - " +nombre +"\nSexo: " +sexo +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email +"\n\n";
+		String cadena = "Usuario: " +"\n" +toString() +"\n\n";
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			

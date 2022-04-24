@@ -40,7 +40,7 @@ public class Test {
 		boolean buscar3 = lista.eliminarID(1);
 		boolean buscar4 = lista.eliminarNombre("holas");
 		int aux = 2;
-		boolean buscar5 = y.eliminarCodViv(aux);
+		boolean buscar5 = lista.prueba(aux);
 		
 		System.out.println("");
 		if (buscar != null){
@@ -78,6 +78,8 @@ public class Test {
 			
 			System.out.println("No se ha podido borrar Nombre");
 			
+			
+		//IMPORTANTE: Método para borrar vivienda en la lista de viviendas y de su respectivo usuario	
 		System.out.println("");	
 		if (buscar5 != false){
 			
