@@ -94,7 +94,8 @@ public class Vivienda {
 	
 	public String mostrarViv(){
 		
-		return "Vivienda numero " +codViv +"\nDimensiones: " +dimensiones +"\nDireccion: " +direccion +"\nPrecio por noche: " +precio +"\nEstado: " +estado +"\nDescripcion: " +descripcion;
+		return "Vivienda numero " +codViv +"\nDimensiones: " +dimensiones +"\nDireccion: " +direccion 
+		+"\nPrecio por noche: " +precio +" euros" +"\nEstado: " +estado +"\nDescripcion: " +descripcion;
 		
 	}
 	
