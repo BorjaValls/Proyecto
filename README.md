@@ -14,6 +14,6 @@ Todas las clases heredadas de Persona comparten el mismo tramo de ID, ninguno ob
 
 Cosas por terminar:
 - Todos los diagramas UML.
-- Código (empleados, clientes, etc...)
+- Retocar las clases con funciones específicas
 - Excepciones??
 - JavaDoc
