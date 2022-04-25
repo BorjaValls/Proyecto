@@ -65,7 +65,7 @@ public class Usuario extends Persona{
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			cadena += viviendas.get(i).mostrarViv() +"\n\n";
+			cadena += viviendas.get(i).mostrarViv() +"\n";
 			
 		}
 		

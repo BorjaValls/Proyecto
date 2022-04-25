@@ -143,7 +143,7 @@ public class ListaUsuarios {
 		
 	}
 	
-	public boolean prueba (int aux){
+	public boolean borrarVivUs (int aux){
 		
 		int posicion = -1;
 		

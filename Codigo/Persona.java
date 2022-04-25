@@ -4,8 +4,8 @@ import java.io.*;
 public abstract class Persona {
 	
 	private static int numero = 1;
-	protected int id, telefono;
-	protected String nombre, dni, direccion, cuentaBancaria, email, sexo;
+	private int id, telefono;
+	private String nombre, dni, direccion, cuentaBancaria, email, sexo;
 	
 	public Persona (int telefono, String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
 		

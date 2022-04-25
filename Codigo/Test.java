@@ -21,11 +21,11 @@ public class Test {
 		Reserva reserva1 = new Reserva ("Online", "detalles1", casa1);
 		Reserva reserva2 = new Reserva ("Efectivo", "detalles2", casa2);
 		
-		x.anyadirViv(casa1);
-		y.anyadirViv(casa2);
-		y.anyadirViv(casa3);
 		lista.anyadir(x);
 		lista.anyadir(y);
+		lista.buscarID(1).anyadirViv(casa1);
+		y.anyadirViv(casa2);
+		y.anyadirViv(casa3);
 		lista2.anyadir(casa1);
 		lista2.anyadir(casa2);
 		lista2.anyadir(casa3);
@@ -49,7 +49,7 @@ public class Test {
 		boolean buscar3 = lista.eliminarID(1);
 		boolean buscar4 = lista.eliminarNombre("holas");
 		int aux = 2;
-		boolean buscar5 = lista.prueba(aux);
+		boolean buscar5 = lista.borrarVivUs(aux);
 		
 		System.out.println("");
 		if (buscar != null){
