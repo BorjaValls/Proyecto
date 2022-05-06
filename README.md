@@ -17,3 +17,4 @@ Cosas por terminar:
 - Retocar las clases con funciones específicas
 - Excepciones??
 - JavaDoc
+- Implementar lectura de fichero cada vez que se inicialice el programa y que escriba los datos introducidos cada vez que se meten
