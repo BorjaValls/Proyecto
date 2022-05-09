@@ -18,3 +18,5 @@ Cosas por terminar:
 - Excepciones??
 - JavaDoc
 - Implementar lectura de fichero cada vez que se inicialice el programa y que escriba los datos introducidos cada vez que se meten
+
+IMPORTANTE: Cada vez que se inicialice el programa que lea lo que hay escrito Y lo guarde en el arraylist inicial y operar en ese arraylist y cada vez que se modifique algo sobreescribir el original con los datos nuevos (si no funciona eliminar y crear otro nuevo cada vez) . Checkear el vocabulario de Raul.
