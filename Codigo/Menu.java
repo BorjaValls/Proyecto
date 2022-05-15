@@ -30,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Menu {
 	
-	public static void main (String[] args) {
+	public static void main (String[] args) throws Exception{
 		
 		Scanner teclado = new Scanner(System.in);
 		int telefono;
@@ -82,24 +82,23 @@ public class Menu {
 								System.out.println("Introduce el telefono");
 								telefono = teclado.nextInt();
 									
-								nombre = teclado.nextLine();
 								System.out.println("\nIntroduce el nombre y apellidos");
-								nombre = teclado.nextLine();
+								nombre = teclado.next();
 									
 								System.out.println("\nIntroduce el DNI");
-								dni = teclado.nextLine();
+								dni = teclado.next();
 									
 								System.out.println("\nIntroduce la direccion");
-								direccion = teclado.nextLine();
+								direccion = teclado.next();
 									
 								System.out.println("\nIntroduce la cuenta bancaria");
-								cuentaBancaria = teclado.nextLine();
+								cuentaBancaria = teclado.next();
 									
 								System.out.println("\nIntroduce el email");
-								email = teclado.nextLine();
+								email = teclado.next();
 									
 								System.out.println("\nIntroduce el sexo");
-								sexo = teclado.nextLine();
+								sexo = teclado.next();
 									
 								Usuario usuario = new Usuario (telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
 								listaUsuarios.anyadir(usuario);
@@ -147,8 +146,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2 = teclado.nextLine();
-											aux2 = teclado.nextLine();
+											String aux2 = teclado.next();
 											buscarUsuario = listaUsuarios.buscarNombre(aux2);
 											
 											System.out.println("");
@@ -165,8 +163,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3 = teclado.nextLine();
-											aux3 = teclado.nextLine();
+											String aux3 = teclado.next();
 											buscarUsuario = listaUsuarios.buscarDni(aux3);
 											
 											System.out.println("");
@@ -232,8 +229,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2 = teclado.nextLine();
-											aux2 = teclado.nextLine();
+											String aux2 = teclado.next();
 											buscarUsuario2 = listaUsuarios.eliminarNombre(aux2);
 											
 											System.out.println("");
@@ -250,8 +246,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3 = teclado.nextLine();
-											aux3 = teclado.nextLine();
+											String aux3 = teclado.next();
 											buscarUsuario2 = listaUsuarios.eliminarDni(aux3);
 											
 											System.out.println("");
@@ -330,25 +325,24 @@ public class Menu {
 							
 								System.out.println("Introduce el telefono");
 								telefono = teclado.nextInt();
-									
-								nombre = teclado.nextLine();
+								
 								System.out.println("\nIntroduce el nombre y apellidos");
-								nombre = teclado.nextLine();
+								nombre = teclado.next();
 									
 								System.out.println("\nIntroduce el DNI");
-								dni = teclado.nextLine();
+								dni = teclado.next();
 									
 								System.out.println("\nIntroduce la direccion");
-								direccion = teclado.nextLine();
+								direccion = teclado.next();
 									
 								System.out.println("\nIntroduce la cuenta bancaria");
-								cuentaBancaria = teclado.nextLine();
+								cuentaBancaria = teclado.next();
 									
 								System.out.println("\nIntroduce el email");
-								email = teclado.nextLine();
+								email = teclado.next();
 									
 								System.out.println("\nIntroduce el sexo");
-								sexo = teclado.nextLine();
+								sexo = teclado.next();
 									
 								Cliente cliente = new Cliente (telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
 								listaClientes.anyadir(cliente);
@@ -396,8 +390,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2c = teclado.nextLine();
-											aux2c = teclado.nextLine();
+											String aux2c = teclado.next();
 											buscarCliente = listaClientes.buscarNombre(aux2c);
 											
 											System.out.println("");
@@ -414,8 +407,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3c = teclado.nextLine();
-											aux3c = teclado.nextLine();
+											String aux3c = teclado.next();
 											buscarCliente = listaClientes.buscarDni(aux3c);
 											
 											System.out.println("");
@@ -481,8 +473,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2 = teclado.nextLine();
-											aux2 = teclado.nextLine();
+											String aux2 = teclado.next();
 											buscarUsuario2c = listaClientes.eliminarNombre(aux2);
 											
 											System.out.println("");
@@ -499,8 +490,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3 = teclado.nextLine();
-											aux3 = teclado.nextLine();
+											String aux3 = teclado.next();
 											buscarUsuario2c = listaClientes.eliminarDni(aux3);
 											
 											System.out.println("");
@@ -579,31 +569,30 @@ public class Menu {
 							
 								System.out.println("Introduce el telefono");
 								telefono = teclado.nextInt();
-									
-								nombre = teclado.nextLine();
+								
 								System.out.println("\nIntroduce el nombre y apellidos");
-								nombre = teclado.nextLine();
+								nombre = teclado.next();
 									
 								System.out.println("\nIntroduce el DNI");
-								dni = teclado.nextLine();
+								dni = teclado.next();
 									
 								System.out.println("\nIntroduce la direccion");
-								direccion = teclado.nextLine();
+								direccion = teclado.next();
 									
 								System.out.println("\nIntroduce la cuenta bancaria");
-								cuentaBancaria = teclado.nextLine();
+								cuentaBancaria = teclado.next();
 									
 								System.out.println("\nIntroduce el email");
-								email = teclado.nextLine();
+								email = teclado.next();
 									
 								System.out.println("\nIntroduce el sexo");
-								sexo = teclado.nextLine();
+								sexo = teclado.next();
 								
 								System.out.println("\nIntroduce nivel de autorizacion");
-								autorizacion = teclado.nextLine();
+								autorizacion = teclado.next();
 								
 								System.out.println("\nIntroduce puesto de trabajo");
-								puesto = teclado.nextLine();
+								puesto = teclado.next();
 									
 								Empleado empleado = new Empleado (autorizacion, puesto, telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
 								listaEmpleados.anyadir(empleado);
@@ -651,8 +640,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2 = teclado.nextLine();
-											aux2 = teclado.nextLine();
+											String aux2 = teclado.next();
 											buscarEmpleado = listaEmpleados.buscarNombre(aux2);
 											
 											System.out.println("");
@@ -669,8 +657,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3 = teclado.nextLine();
-											aux3 = teclado.nextLine();
+											String aux3 = teclado.next();
 											buscarEmpleado = listaEmpleados.buscarDni(aux3);
 											
 											System.out.println("");
@@ -736,8 +723,7 @@ public class Menu {
 										case 2:
 											
 											System.out.print("Introduce el nombre: ");
-											String aux2 = teclado.nextLine();
-											aux2 = teclado.nextLine();
+											String aux2 = teclado.next();
 											buscarEmpleado2 = listaEmpleados.eliminarNombre(aux2);
 											
 											System.out.println("");
@@ -754,8 +740,7 @@ public class Menu {
 										case 3:
 											
 											System.out.print("Introduce el DNI: ");
-											String aux3 = teclado.nextLine();
-											aux3 = teclado.nextLine();
+											String aux3 = teclado.next();
 											buscarEmpleado2 = listaEmpleados.eliminarDni(aux3);
 											
 											System.out.println("");
@@ -809,6 +794,417 @@ public class Menu {
 						}
 						
 					}while(!salir2e);
+				
+				break;
+				
+				case 4:
+				
+					boolean salir4e = false;
+					do{
+						
+						System.out.println("\n==============================================\n");
+						System.out.println("ESTE ES EL MENU PARA ADMINISTRAR VIVIENDAS\n");
+						System.out.println("1. Anyadir vivenda");
+						System.out.println("2. Buscar vivienda");
+						System.out.println("3. Eliminar vivienda");
+						System.out.println("4. Mostrar lista de viviendas");
+						System.out.println("0. Volver al menu principal");
+						System.out.println("\n==============================================\n");
+						int opcion4 = teclado.nextInt();
+						System.out.println("");
+						
+						switch(opcion4){
+							
+							case 1:
+							
+								System.out.println("\nIntroduce el precio por noche");
+								double precio = teclado.nextDouble();
+									
+								System.out.println("\nIntroduce las dimensiones");
+								String dimensiones = teclado.next();
+									
+								System.out.println("\nIntroduce la direccion");
+								direccion = teclado.next();
+									
+								System.out.println("\nIntroduce el estado de la vivienda");
+								String estado = teclado.next();
+									
+								System.out.println("\nIntroduce la descripcion de la vivienda (si es necesaria)");
+								String descripcion = teclado.next();
+									
+								Vivienda vivienda = new Vivienda (precio, dimensiones, descripcion, estado, descripcion);
+								listaViviendas.anyadir(vivienda);
+									
+								System.out.println("\nVivienda creada con exito");
+								
+								boolean introducido = false;
+								
+								while (!introducido){
+									
+									System.out.println("Introduce el usuario al que pertenece la vivienda");
+									System.out.println("Pulsar 1 para introducir ID, 2 para introducir nombre, 3 para introducir DNI");
+									int idUs, auxInt = teclado.nextInt();
+									String usuarioViv;
+									Usuario buscar;
+									
+									switch(auxInt){
+										
+										case 1:
+										
+											System.out.println("Introduce ID");
+											idUs = teclado.nextInt();
+											buscar = listaUsuarios.buscarID(idUs);
+											
+											if (buscar != null){
+												
+												listaUsuarios.buscarID(idUs).anyadirViv(vivienda);
+												System.out.println("Vivienda anyadida a usuario con exito");
+												introducido = true;
+												
+											}else System.out.println("El ID no existe");
+										
+										break;
+										
+										case 2:
+										
+											System.out.println("Introduce nombre");
+											usuarioViv = teclado.next();
+											buscar = listaUsuarios.buscarNombre(usuarioViv);
+											
+											if (buscar != null){
+												
+												listaUsuarios.buscarNombre(usuarioViv).anyadirViv(vivienda);
+												System.out.println("Vivienda anyadida a usuario con exito");
+												introducido = true;
+												
+											}else System.out.println("El nombre no existe");
+										
+										break;
+										
+										case 3:
+										
+											System.out.println("Introduce DNI");
+											usuarioViv = teclado.next();
+											buscar = listaUsuarios.buscarDni(usuarioViv);
+											
+											if (buscar != null){
+												
+												listaUsuarios.buscarDni(usuarioViv).anyadirViv(vivienda);
+												System.out.println("Vivienda anyadida a usuario con exito");
+												introducido = true;
+												
+											}else System.out.println("El DNI no existe");
+										
+										break;
+										
+									}
+									
+								}
+								
+								
+							break;
+							
+							case 2:
+								
+								boolean salir4f = false;
+								Vivienda buscarVivienda;
+								
+								do{
+									
+									System.out.println("\n==============================================\n");
+									System.out.println("ESTE ES EL MENU PARA BUSCAR VIVIENDA\n");
+									System.out.println("1. Buscar por ID");
+									System.out.println("0. Volver al menu de viviendas");
+									System.out.println("\n==============================================\n");
+									int opcion3e = teclado.nextInt();
+									System.out.println("");
+								
+									switch(opcion3e){
+										
+										case 1:
+											
+											System.out.print("Introduce el ID: ");
+											int aux = teclado.nextInt();
+											buscarVivienda = listaViviendas.buscarCodViv2(aux);
+											
+											System.out.println("");
+											if (buscarVivienda != null){
+												
+												System.out.println(buscarVivienda);
+											
+											}else
+											
+												System.out.println("No existe ninguna vivienda con ese ID");
+										
+										break;
+										
+										case 0:
+										
+											salir4f = true;
+										
+										break;
+										
+									}
+									
+								}while(!salir4f);
+								
+							
+							break;
+							
+							case 3:
+								
+								boolean salir4g = false;
+								boolean buscarVivienda2;
+								
+								do{
+									
+									System.out.println("\n==============================================\n");
+									System.out.println("ESTE ES EL MENU PARA ELIMINAR VIVIENDA\n");
+									System.out.println("1. Eliminar por ID");
+									System.out.println("0. Volver al menu de viviendas");
+									System.out.println("\n==============================================\n");
+									int opcion3 = teclado.nextInt();
+									System.out.println("");
+								
+									switch(opcion3){
+										
+										case 1:
+											
+											System.out.print("Introduce el ID: ");
+											int aux = teclado.nextInt();
+											buscarVivienda2 = listaUsuarios.borrarVivUs(aux);
+											
+											System.out.println("");
+											if (buscarVivienda2 != false){
+												
+												listaViviendas.eliminarCodViv2(aux);
+												System.out.println("Borrado con exito");
+											
+											}else
+											
+												System.out.println("No existe ninguna vivienda con ese ID");
+										
+										break;
+										
+										case 0:
+										
+											salir4g = true;
+										
+										break;
+										
+									}
+									
+								}while(!salir4g);
+								
+							
+							break;
+							
+							case 4:
+							
+								System.out.println("");
+								System.out.println("LISTA DE VIVIENDAS");
+								System.out.println(listaViviendas.mostrarLV());
+								System.out.println("");
+							
+							break;
+							
+							case 0:
+				
+								System.out.println("Volvemos al menu principal");
+								salir4e = true;
+							
+							break;
+							
+							default:
+				
+								System.out.println("Input no valido");
+				
+							break;
+							
+						}
+						
+					}while(!salir4e);
+				
+				break;
+				
+				case 5:
+					
+					boolean salir5c = false;
+					do{
+						
+						System.out.println("\n==============================================\n");
+						System.out.println("ESTE ES EL MENU PARA ADMINISTRAR RESERVAS\n");
+						System.out.println("1. Anyadir reserva");
+						System.out.println("2. Buscar reserva");
+						System.out.println("3. Eliminar reserva");
+						System.out.println("4. Mostrar lista de reservas");
+						System.out.println("0. Volver al menu principal");
+						System.out.println("\n==============================================\n");
+						int opcionR = teclado.nextInt();
+						System.out.println("");
+						
+						switch(opcionR){
+							
+							case 1:
+							
+								String pago = teclado.nextLine();
+								System.out.println("\nIntroduce el tipo de pago");
+								pago = teclado.next();
+									
+								System.out.println("\nIntroduce detalles a añadir");
+								String detalles = teclado.next();
+									
+								System.out.println("\nIntroduce ID de la vivienda");
+								int auxx = teclado.nextInt();
+								
+								Vivienda buscarVivienda2 = listaViviendas.buscarCodViv2(auxx);
+								
+								if (buscarVivienda2 == null){
+									
+									System.out.println("\nLa vivienda no existe, repita el proceso");
+									break;
+									
+								}
+								
+								Reserva reserva = new Reserva (pago, detalles, buscarVivienda2);
+								listaReservas.anyadir(reserva);
+								
+								System.out.println("\nIntroduce el dia de entrada en formato dd/MM/yyyy");
+								String inicio = teclado.next();
+								reserva.setInicio(inicio);
+								
+								System.out.println("\nIntroduce el dia de salida en formato dd/MM/yyyy");
+								String fin = teclado.next();
+								reserva.setFinal(fin);
+								reserva.setImporte();
+								reserva.setDuracion();
+								
+								System.out.println("\nReserva creada con exito");
+								
+							
+							break;
+							
+							case 2:
+								
+								boolean salirR2 = false;
+								Reserva buscarReserva;
+								
+								do{
+									
+									System.out.println("\n==============================================\n");
+									System.out.println("ESTE ES EL MENU PARA BUSCAR RESERVAS\n");
+									System.out.println("1. Buscar por ID");
+									System.out.println("0. Volver al menu de reservas");
+									System.out.println("\n==============================================\n");
+									int opcionR2 = teclado.nextInt();
+									System.out.println("");
+								
+									switch(opcionR2){
+										
+										case 1:
+											
+											System.out.print("Introduce el ID: ");
+											int auxr = teclado.nextInt();
+											buscarReserva = listaReservas.buscarCodReserva(auxr);
+											
+											System.out.println("");
+											if (buscarReserva != null){
+												
+												System.out.println(buscarReserva);
+											
+											}else
+											
+												System.out.println("No existe ninguna reserva con ese ID");
+										
+										break;
+										
+										case 0:
+										
+											salirR2 = true;
+										
+										break;
+										
+									}
+									
+								}while(!salirR2);
+								
+							
+							break;
+							
+							case 3:
+								
+								boolean salir5r = false;
+								boolean buscarReserva2c;
+								
+								do{
+									
+									System.out.println("\n==============================================\n");
+									System.out.println("ESTE ES EL MENU PARA ELIMINAR RESERVAS\n");
+									System.out.println("1. Eliminar por ID");
+									System.out.println("0. Volver al menu de reserva");
+									System.out.println("\n==============================================\n");
+									int opcion3r = teclado.nextInt();
+									System.out.println("");
+								
+									switch(opcion3r){
+										
+										case 1:
+											
+											System.out.print("Introduce el ID: ");
+											int auxr = teclado.nextInt();
+											buscarReserva2c = listaReservas.eliminarCodReserva(auxr);
+											
+											System.out.println("");
+											if (buscarReserva2c != false){
+												
+												System.out.println("Borrado con exito");
+											
+											}else
+											
+												System.out.println("No existe ninguna reserva con ese ID");
+										
+										break;
+										
+										case 0:
+										
+											salir5r = true;
+										
+										break;
+										
+									}
+									
+								}while(!salir5r);
+								
+							
+							break;
+							
+							
+							
+							case 4:
+							
+								System.out.println("");
+								System.out.println("LISTA DE RESERVAS");
+								System.out.println(listaReservas.mostrarLR());
+								System.out.println("");
+							
+							break;
+							
+							case 0:
+				
+								System.out.println("Volvemos al menu principal");
+								salir5c = true;
+							
+							break;
+							
+							default:
+				
+								System.out.println("Input no valido");
+				
+							break;
+							
+						}
+						
+					}while(!salir5c);
 				
 				break;
 				

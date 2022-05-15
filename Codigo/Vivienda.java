@@ -7,8 +7,9 @@ public class Vivienda {
 	private int codViv;
 	private double precio;
 	private String dimensiones, direccion, estado, descripcion;
+	Usuario usuario;
 	
-	public Vivienda (double precio, String dimensiones, String direccion, String estado, String descripcion){
+	public Vivienda (double precio, String dimensiones, String direccion, String estado, String descripcion/*, Usuario usuario*/){
 		
 		codViv = numero;
 		this.precio = precio;
@@ -16,9 +17,22 @@ public class Vivienda {
 		this.direccion = direccion;
 		this.estado = estado;
 		this.descripcion = descripcion;
+		this.usuario = usuario;
 		numero++;
 		
 	}
+	
+	/*public void setUsuario (Usuario usuario){
+		
+		this.usuario = usuario;
+		
+	}
+	
+	public Usuario getUsuario (){
+		
+		return usuario;
+		
+	}*/
 	
 	public void setCodViv (int codViv){
 		
