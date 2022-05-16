@@ -1047,9 +1047,8 @@ public class Menu {
 							
 							case 1:
 							
-								String pago = teclado.nextLine();
+								String pago = teclado.next();
 								System.out.println("\nIntroduce el tipo de pago");
-								pago = teclado.next();
 									
 								System.out.println("\nIntroduce detalles a añadir");
 								String detalles = teclado.next();
