@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DSGS Proyecto" version="4">
+  <OBJECT>
+    <ID name="DSGS Proyecto" mc="Standard.Project" uid="065789c2-0041-4bb8-850c-935804dba8c2"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[DSGS Proyecto]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="dsgs proyecto" mc="Standard.Package" uid="33312bf3-c5f0-4e52-a36f-66720368ad64"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="DSGS Proyecto" mc="Infrastructure.DiagramSet" uid="0f385df9-0884-4066-b563-92ff4ec007db"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

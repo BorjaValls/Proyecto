@@ -1,0 +1,5 @@
+#Sat May 21 19:05:00 CEST 2022
+org.modelio.app.diagram.editor.OpenedDiagrams2='Activity Activity diagram' {beb4c633-757b-46fe-a68b-a532dc85bc80} Standard.ActivityDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Interaction1 Sequence diagram' {f9972098-17df-4edd-a090-c25ec55bb755} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams0='Interaction Sequence diagram' {658c0cbe-fbf5-410c-8ca6-d3209da7050d} Standard.SequenceDiagram
+org.modelio.app.model.search.ui.SearchHistory1=loop

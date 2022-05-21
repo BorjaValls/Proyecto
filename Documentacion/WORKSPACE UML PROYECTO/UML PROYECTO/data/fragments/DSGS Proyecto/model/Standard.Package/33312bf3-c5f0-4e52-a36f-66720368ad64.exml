@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="dsgs proyecto" version="4">
+  <OBJECT>
+    <ID name="dsgs proyecto" mc="Standard.Package" uid="33312bf3-c5f0-4e52-a36f-66720368ad64"/>
+    <PID name="DSGS Proyecto" mc="Standard.Project" uid="065789c2-0041-4bb8-850c-935804dba8c2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[dsgs proyecto]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="DSGS" mc="Standard.Interaction" uid="96ab843b-4cfb-4c0d-97d5-f38aea5e4f70"/>
+        <COMPID name="DS" mc="Standard.Interaction" uid="8dc163d0-001b-4a24-bdd8-9f99bb85fd90"/>
+        <COMPID name="Activity" mc="Standard.Activity" uid="a97485ee-a339-47fb-9185-d1fc6c879e7a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
