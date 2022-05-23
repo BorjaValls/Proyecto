@@ -5,6 +5,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+//VERSION DESACTUALIZADA DE TESTEO
+
 public class Test {
 	
 	public static void main (String[] args) throws Exception{
@@ -15,9 +17,9 @@ public class Test {
 		ListaReserva lista3 = new ListaReserva ();
 		Usuario x = new Usuario (1234, "Borja", "2179N", "calle", "numerocuenta1", "email@email.com", "hombre");
 		Usuario y = new Usuario (9876, "Carlos", "7189J", "avenida", "2numerocuenta2", "2email@email.com2", "HOMBRE");
-		Vivienda casa1 = new Vivienda (50.21, "120 m2", "camino1", "ocupado", "descripcion1");
-		Vivienda casa2 = new Vivienda (60.09, "110 m2", "camino2", "listo", "descripcion2");
-		Vivienda casa3 = new Vivienda (41.88, "115 m2", "camino3", "listo", "descripcion3");
+		Vivienda casa1 = new Vivienda (50.21, "Casa Pedro", "120 m2", "camino1", "ocupado", "descripcion1");
+		Vivienda casa2 = new Vivienda (60.09, "Casa Borja", "110 m2", "camino2", "listo", "descripcion2");
+		Vivienda casa3 = new Vivienda (41.88, "Apartemento Alto", "115 m2", "camino3", "listo", "descripcion3");
 		Reserva reserva1 = new Reserva ("Online", "detalles1", casa1);
 		Reserva reserva2 = new Reserva ("Efectivo", "detalles2", casa2);
 		

@@ -4,6 +4,8 @@ import java.io.*;
 public class ListaClientes {
 	
 	private ArrayList <Cliente> cliente;
+	private static final String RUTA = "./Ficheros/";
+	private static final String fclientes = "fclientes.txt";
 	
 	public ListaClientes (){
 		
@@ -49,7 +51,7 @@ public class ListaClientes {
 		
 	}
 	
-	public Cliente buscarID (int id){
+	/*public Cliente buscarID (int id){
 		
 		for (int i = 0; i < cliente.size(); i++){
 			
@@ -89,7 +91,7 @@ public class ListaClientes {
 		
 			return true;
 		
-	}
+	}*/
 	
 	public boolean eliminarNombre (String nombre){
 		
@@ -154,6 +156,88 @@ public class ListaClientes {
 		}
 		
 		return cadena;
+		
+	}
+	
+	public void guardarClientes () throws Exception{
+		
+		//Cliente cliente = new Cliente (telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
+		
+		try{
+			
+			File fs = new File(RUTA+fclientes);
+			FileWriter fw = new FileWriter(fs);
+			BufferedWriter bw = new BufferedWriter(fw);
+			
+			for (int i = 0; i < cliente.size(); i++){
+				
+				bw.write(cliente.get(i).getTelefono()+"|");
+				bw.write(cliente.get(i).getNombre()+"|");
+				bw.write(cliente.get(i).getDni()+"|");
+				bw.write(cliente.get(i).getDireccion()+"|");
+				bw.write(cliente.get(i).getCuentaBancaria()+"|");
+				bw.write(cliente.get(i).getEmail()+"|");
+				bw.write(cliente.get(i).getSexo());
+				bw.write("\r\n");
+				
+			}
+			
+			if (bw != null){
+			
+				bw.close();
+				fw.close();
+			
+			}
+			
+		}catch(IOException e){
+			
+			e.printStackTrace();
+			
+		}
+		
+	}
+	
+	public void leerClientes () throws Exception{
+		
+		//Cliente cliente = new Cliente (telefono, nombre, dni, direccion, cuentaBancaria, email, sexo);
+		
+		try{
+			
+			File fs = new File(RUTA+fclientes);
+			FileReader fr = new FileReader(fs);
+			BufferedReader br = new BufferedReader(fr);
+			StringTokenizer tokens;
+			int telefono;
+			String cadena, nombre, dni, direccion, cuentaBancaria, email, sexo;
+			
+			while ( (cadena = br.readLine()) != null){
+				
+				tokens = new StringTokenizer(cadena, "|");
+				
+				telefono = Integer.parseInt((String)tokens.nextToken());
+				nombre = (String)tokens.nextToken();
+				dni = (String)tokens.nextToken();
+				direccion = (String)tokens.nextToken();
+				cuentaBancaria = (String)tokens.nextToken();
+				email = (String)tokens.nextToken();
+				sexo = (String)tokens.nextToken();
+				
+				cliente.add(new Cliente(telefono, nombre, dni, direccion, cuentaBancaria, email, sexo));
+				
+			}
+			
+			if (br != null){
+			
+				br.close();
+				fr.close();
+			
+			}
+			
+		}catch(IOException e){
+			
+			e.printStackTrace();
+			
+		}
 		
 	}
 	

@@ -17,11 +17,11 @@ public class Usuario extends Persona{
 		
 	}
 	
-	public Vivienda buscarCodViv (int cv){
+	public Vivienda buscarCodViv (String nombre){
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == cv){
+			if (viviendas.get(i).getNombre().equals(nombre)){
 				
 				return viviendas.get(i);
 				
@@ -33,13 +33,13 @@ public class Usuario extends Persona{
 		
 	}
 	
-	public boolean eliminarCodViv (int cv){
+	public boolean eliminarCodViv (String nombre){
 		
 		int posicion = -1;
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			if (viviendas.get(i).getCodViv() == cv){
+			if (viviendas.get(i).getNombre().equals(nombre)){
 				
 				posicion = i;
 				
@@ -61,11 +61,11 @@ public class Usuario extends Persona{
 	
 	public String mostrarVU(){
 		
-		String cadena = "Usuario: " +"\n" +toString() +"\n\n";
+		String cadena = "Usuario: " +toString() +"\n\n" +"VIVIENDAS DEL USUARIO:\n\n";
 		
 		for (int i = 0; i < viviendas.size(); i++){
 			
-			cadena += viviendas.get(i).mostrarViv() +"\n";
+			cadena += viviendas.get(i).mostrarViv() +"\n\n";
 			
 		}
 		

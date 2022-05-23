@@ -3,22 +3,23 @@ import java.io.*;
 
 public class Vivienda {
 	
-	private static int numero = 1;
-	private int codViv;
+	//private static int numero = 1;
+	//private int codViv;
 	private double precio;
-	private String dimensiones, direccion, estado, descripcion;
+	private String nombre, dimensiones, direccion, estado, descripcion;
 	//Usuario usuario;
 	
-	public Vivienda (double precio, String dimensiones, String direccion, String estado, String descripcion/*, Usuario usuario*/){
+	public Vivienda (double precio, String nombre, String dimensiones, String direccion, String estado, String descripcion/*, Usuario usuario*/){
 		
-		codViv = numero;
+		//codViv = numero;
 		this.precio = precio;
+		this.nombre = nombre;
 		this.dimensiones = dimensiones;
 		this.direccion = direccion;
 		this.estado = estado;
 		this.descripcion = descripcion;
 		//this.usuario = usuario;
-		numero++;
+		//numero++;
 		
 	}
 	
@@ -32,7 +33,7 @@ public class Vivienda {
 		
 		return usuario;
 		
-	}*/
+	}
 	
 	public void setCodViv (int codViv){
 		
@@ -43,6 +44,18 @@ public class Vivienda {
 	public int getCodViv (){
 		
 		return codViv;
+		
+	}*/
+	
+	public void setNombre (String nombre){
+		
+		this.nombre = nombre;
+		
+	}
+	
+	public String getNombre (){
+		
+		return nombre;
 		
 	}
 	
@@ -108,7 +121,7 @@ public class Vivienda {
 	
 	public String mostrarViv(){
 		
-		return "Vivienda numero " +codViv +"\nDimensiones: " +dimensiones +"\nDireccion: " +direccion 
+		return "Nombre de la vivienda: " +nombre +"\nDimensiones: " +dimensiones +"\nDireccion: " +direccion 
 		+"\nPrecio por noche: " +precio +" euros" +"\nEstado: " +estado +"\nDescripcion: " +descripcion;
 		
 	}

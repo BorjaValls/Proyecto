@@ -3,13 +3,13 @@ import java.io.*;
 
 public abstract class Persona {
 	
-	private static int numero = 1;
-	private int id, telefono;
+	//private static int numero = 1;
+	private int /*id,*/ telefono;
 	private String nombre, dni, direccion, cuentaBancaria, email, sexo;
 	
 	public Persona (int telefono, String nombre, String dni, String direccion, String cuentaBancaria, String email, String sexo){
 		
-		id = numero;
+		//id = numero;
 		this.telefono = telefono;
 		this.nombre = nombre;
 		this.dni = dni;
@@ -17,7 +17,7 @@ public abstract class Persona {
 		this.cuentaBancaria = cuentaBancaria;
 		this.email = email;
 		this.sexo = sexo;
-		numero++;
+		//numero++;
 		
 	}
 	
@@ -104,7 +104,7 @@ public abstract class Persona {
 		
 	}
 	
-	public void setID (int id){
+	/*public void setID (int id){
 		
 		this.id = id;
 		
@@ -114,11 +114,11 @@ public abstract class Persona {
 		
 		return id;
 		
-	}
+	}*/
 	
 	public String toString(){
 		
-		return id +" - " +nombre +"\nSexo: " +sexo +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email;
+		return /*id +" - " +*/nombre +"\nSexo: " +sexo +"\nDNI: " +dni +"\nDireccion: " +direccion +"\nCuenta bancaria: " +cuentaBancaria +"\nEmail: " +email;
 		
 	}
 	

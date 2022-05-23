@@ -4,10 +4,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date; 
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
+import java.lang.Math;
 
 public class Reserva {
 	
-	private static int numero = 1;
+	//private static int numero = 1;
 	private int codRerserva;
 	private double importe;
 	private String tipoPago, detalles, in, fin;
@@ -19,11 +20,23 @@ public class Reserva {
 	//Añadir método del importe una vez creado lo demás (o hacerlo en el main)
 	public Reserva (String tipoPago, String detalles, Vivienda resviv){
 		
-		codRerserva = numero;
+		codRerserva = (int)(Math.random()*99999998) + 1;
 		this.tipoPago = tipoPago;
 		this.detalles = detalles;
 		this.resviv = resviv;
-		numero++;
+		//numero++;
+		
+	}
+	
+	public void setViv (Vivienda resviv){
+		
+		this.resviv = resviv;
+		
+	}
+	
+	public Vivienda getViv (){
+		
+		return resviv;
 		
 	}
 	
