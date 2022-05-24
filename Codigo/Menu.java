@@ -1087,6 +1087,7 @@ public class Menu {
 						System.out.println("2. Buscar reserva");
 						System.out.println("3. Eliminar reserva");
 						System.out.println("4. Mostrar lista de reservas");
+						System.out.println("5. Generar reserva");
 						System.out.println("0. Volver al menu principal");
 						System.out.println("\n==============================================\n");
 						int opcionR = teclado.nextInt();
@@ -1236,6 +1237,28 @@ public class Menu {
 								System.out.println(listaReservas.mostrarLR());
 								System.out.println("");
 							
+							break;
+							
+							case 5:
+								
+								Reserva buscarReserva1;
+								System.out.print("Introduce el ID: ");
+								int auxr = teclado.nextInt();
+								buscarReserva1 = listaReservas.buscarCodReserva(auxr);
+											
+								System.out.println("");
+								if (buscarReserva1 != null){
+
+									listaReservas.generarReserva(buscarReserva1);
+									System.out.println("Reserva generada correctamente");
+											
+								}else{
+											
+									System.out.println("No existe ninguna reserva con ese ID");
+									break;
+									
+								}
+
 							break;
 							
 							case 0:

@@ -149,5 +149,153 @@ public class ListaReserva {
 		
 	}
 	
+	public void generarReserva (Reserva reserva) throws Exception{
+		
+		try{
+		
+			File f = new File ("./Reservas/"+reserva.getCodRerserva()+".html");
+			FileWriter fw = new FileWriter(f);
+			BufferedWriter bw= new BufferedWriter(fw);
+
+			bw.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n" +
+					"<html>\n" +
+					"<head>\n" +
+					"\t<meta http-equiv=\"content-type\" content=\"text/html; charset=utf-8\"/>\n" +
+					"\t<title></title>\n" +
+					"\t<meta name=\"generator\" content=\"LibreOffice 7.2.5.2 (Linux)\"/>\n" +
+					"\t<meta name=\"created\" content=\"2022-05-24T18:45:43.279000000\"/>\n" +
+					"\t<meta name=\"changed\" content=\"2022-05-24T20:27:17.102000000\"/>\n" +
+					"\t<style type=\"text/css\">\n" +
+					"\t\t@page { size: 8.27in 11.69in; margin: 0.79in }\n" +
+					"\t\tp { line-height: 115%; margin-bottom: 0.1in; background: transparent }\n" +
+					"\t</style>\n" +
+					"</head>\n" +
+					"<body lang=\"es-ES\" link=\"#000080\" vlink=\"#800000\" dir=\"ltr\"><p align=\"center\" style=\"line-height: 100%; margin-bottom: 0in\">\n" +
+					"\t</p>\n" +
+					"<p align=\"center\" style=\"line-height: 100%; margin-bottom: 0in\"><img src=\"./Plantilla generación reserva_html_3baad9275884190c.png\" name=\"Imagen1\" align=\"left\" width=\"108\" height=\"108\" border=\"0\"/>\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p align=\"center\" style=\"line-height: 100%; margin-bottom: 0in\"><font face=\"Arial, sans-serif\"><font size=\"7\" style=\"font-size: 32pt\"><b>ALOJAMIENTOS\n" +
+					"BORJA</b></font></font></p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><font face=\"Arial, sans-serif\"><font size=\"5\" style=\"font-size: 18pt\"><b>RESERVA\n" +
+					reserva.getCodRerserva()+"</b></font></font></p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Esta\n" +
+					"es la factura por la estancia en "+reserva.getViv().getNombre()+" durante la\n" +
+					"duración de "+reserva.getDuracion()+" noches, en la dirección" +reserva.getViv().getDireccion() +"\n" +
+					", por una cantidad de "+reserva.getImporte() +"euros. El\n" +
+					"pago de este será mediante "+reserva.getTipoPago()+".</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">El\n" +
+					"cliente se compromete a acudir a las instalaciones el dia "+reserva.getInicio()+"\n" +
+					" para recoger las llaves de la casa y en el mismo lugar el dia\n" +
+					reserva.getFinal()+" a devolverlas.</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Detalles\n" +
+					"de la reserva: "+reserva.getDetalles()+"</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">A\n" +
+					"continuación los detalles del alojamiento:</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0in; background: transparent; page-break-before: auto\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Vivienda\n" +
+					reserva.getViv().getNombre()+"</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0in; background: transparent\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Dimensiones:\n" +
+					reserva.getViv().getDimensiones()+"</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0in; background: transparent\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Dirección:\n" +
+					reserva.getViv().getDireccion()+"</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0in; background: transparent\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Descripción\n" +
+					"de la vivienda: "+reserva.getViv().getDescripcion()+"</font></font></p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-left: 0.39in; margin-right: 0.39in; margin-bottom: 0in; background: transparent\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
+					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">El\n" +
+					"cliente se compromete a cumplir con las condiciones de uso y servicio\n" +
+					"de los alojamientos y demás instalaciones de <i>Alojamientos Borja.\n" +
+					"</i><span style=\"font-style: normal\">El maltrato o vandalizado de las\n" +
+					"instalaciones, propiedades u objetos dentro de ellas por parte de los\n" +
+					"clientes conllevará multas de hasta 300% del daño causado, así\n" +
+					"como la prohibición de volver a usar la plataforma para adquirir\n" +
+					"servicios de nuevo.</span></font></font></p>\n" +
+					"<p style=\"line-height: 100%; margin-bottom: 0in\"><br/>\n" +
+					"\n" +
+					"</p>\n" +
+					"</body>\n" +
+					"</html>");
+			
+		}catch(IOException e){
+			
+			e.printStackTrace();
+			
+		}
+		
+	}
+	
 }
 
