@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="diagramas proyecto" version="4">
+  <OBJECT>
+    <ID name="diagramas proyecto" mc="Standard.Package" uid="01417bc8-a193-43fc-a4fe-ba8689f66abc"/>
+    <PID name="DIAGRAMAS PROYECTO" mc="Standard.Project" uid="6dba7ed0-b851-410d-af3e-d0d9cec1a294"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[diagramas proyecto]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="State Machine" mc="Standard.StateMachine" uid="d87a8813-e257-4f8a-8c33-f1a13e5ec65a"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Usuario" mc="Standard.Actor" uid="b0187597-a61c-46d5-a854-936b8424881c"/>
+        <COMPID name="Cliente" mc="Standard.Actor" uid="f1411533-c4d9-4675-ae0a-e7daa435eed9"/>
+        <COMPID name="Empelado" mc="Standard.Actor" uid="c4dd848f-78e4-4d65-b9c3-d7d39886bcf7"/>
+        <COMPID name="Consultar Estado Vivienda" mc="Standard.UseCase" uid="efad1648-10d1-4d24-a53b-ec50dc7944b0"/>
+        <COMPID name="Cancelar Reserva" mc="Standard.UseCase" uid="2b83aadc-52dc-405a-b392-706da67f66e7"/>
+        <COMPID name="Realizar Reserva" mc="Standard.UseCase" uid="2eaf5231-0b60-4de6-931a-b82d95ecd5da"/>
+        <COMPID name="Solicitar Reserva" mc="Standard.UseCase" uid="bbf73097-b273-4078-81be-e3c53eb08dd4"/>
+        <COMPID name="Añadir Vivienda" mc="Standard.UseCase" uid="244c3d12-cea5-4580-803d-189f8569dc6e"/>
+        <COMPID name="Eliminar Vivienda" mc="Standard.UseCase" uid="626adab9-a5f7-4aaf-b34e-2f217529f65b"/>
+        <COMPID name="Añadir Propietario" mc="Standard.UseCase" uid="50e3c886-474d-439a-b9a2-5a9cec3f9cc5"/>
+        <COMPID name="Añadir Cliente" mc="Standard.UseCase" uid="60c127dc-05ce-4509-9bc3-88c6a77e719e"/>
+        <COMPID name="Eliminar Cliente" mc="Standard.UseCase" uid="dba4d578-538f-4c79-87a6-4373c48ec32b"/>
+        <COMPID name="Añadir Usuario" mc="Standard.UseCase" uid="615c5904-8d2c-4f04-85b7-31334c8c9027"/>
+        <COMPID name="Eliminar Usuario" mc="Standard.UseCase" uid="87265aeb-3593-4364-9a6a-16d60696896d"/>
+        <COMPID name="Generar Reserva" mc="Standard.UseCase" uid="0b0eb190-8e17-472b-8063-5f2ab51081b6"/>
+        <COMPID name="Mostrar Viviendas" mc="Standard.UseCase" uid="3a7f5a31-4b9a-4bd6-9320-e83a14be5094"/>
+        <COMPID name="Mostrar Reservas" mc="Standard.UseCase" uid="7b03e20b-5fc3-4aa6-b9c0-4af492ac2dba"/>
+        <COMPID name="Mostrar Usuarios" mc="Standard.UseCase" uid="f9a79b63-7fd1-4cf2-b0b3-8e6166196987"/>
+        <COMPID name="Mostrar Clientes" mc="Standard.UseCase" uid="cb15b320-a1a9-4975-bd9d-4973ecc33744"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="diagramas proyecto Use Case diagram" mc="Standard.UseCaseDiagram" uid="bfd6e3ae-ccc3-460c-9ce6-cf879af2dad9"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
