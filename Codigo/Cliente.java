@@ -17,7 +17,7 @@ public class Cliente extends Persona{
 	/**
 	 * Inicializa el objeto y todos los elementos asociados
 	 * @param telefono (numero de teléfono)
-	 * @param nombre (nombre (y/o apellidos de la persona)
+	 * @param nombre (nombre (y/o apellidos del cliente)
 	 * @param dni (documento nacional de identidad)
 	 * @param direccion (domicilio personal)
 	 * @param cuentaBancaria (cuenta personal del banco)

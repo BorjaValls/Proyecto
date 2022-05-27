@@ -50,9 +50,10 @@ public class Vivienda {
 		
 	}
 
+	/*
 	/**
 	 * @deprecated
-	 */
+	 *
 	/*public void setUsuario (Usuario usuario){
 		
 		this.usuario = usuario;

@@ -19,6 +19,7 @@ public abstract class Persona {
 	 * Numero de teléfono
 	 */
 	private int /*id,*/ telefono;
+
 	/**
 	 * Nombre (y/o apellidos), dni, direccion de domicilio de la persona, cuenta bancaria, correo electrónico y sexo
 	 */
@@ -195,21 +196,22 @@ public abstract class Persona {
 		
 	}
 
+	/*
 	/**
 	 * @deprecated
 	 *
-	 */
-	/*public void setID (int id){
+	public void setID (int id){
 		
 		this.id = id;
 		
 	}
-	
+
 	public int getID (){
 		
 		return id;
 		
-	}*/
+	}
+	*/
 
 	/**
 	 * @return (Devuelve una cadena con los datos del objeto)

@@ -7,8 +7,6 @@ import java.util.concurrent.TimeUnit;
 
 public class Menu {
 
-	Scanner teclado = new Scanner(System.in);
-	
 	public static void main (String[] args) throws Exception{
 		
 		Scanner teclado = new Scanner(System.in);
