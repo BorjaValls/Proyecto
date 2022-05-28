@@ -1,24 +1,61 @@
 import java.util.*;
 import java.io.*;
 
+/**
+ * Clase ListaViviendas
+ *
+ * Contiene los métodos y las operaciones para la administrar el array de Viviendas
+ * que utiliza el programa. Entre las operaciones que realiza se encuentran las de añadir,
+ * buscar y eliminar por nombre, mostrar la lista completa de viviendas y leer y cargar
+ * en fichero los datos del array.
+ *
+ * @author Borja Valls García
+ * @version 1.1
+ */
+
 public class ListaViviendas {
-	
+
+	/**
+	 * Array (o lista) donde se almacenan las viviendas
+	 */
 	private ArrayList <Vivienda> viviendas2;
+
+	/**
+	 * Carpeta global donde se guardan los ficheros
+	 */
 	private static final String RUTA = "./Ficheros/";
+
+	/**
+	 * Fichero donde se guardan y se lee los datos
+	 */
 	private static final String fviviendas = "fviviendas.txt";
-	
+
+	/**
+	 * Inicializa el objeto y todos los elementos asociados.
+	 */
 	public ListaViviendas (){
 		
 		viviendas2 = new ArrayList ();
 		
 	}
-	
+
+	/**
+	 * Guarda la vivienda introducida en el array
+	 * @param x (Vivienda a añadir)
+	 *
+	 */
 	public void anyadir (Vivienda x){
 		
 		viviendas2.add(x);
 		
 	}
-	
+
+	/**
+	 * Busca coincidencias en el array mediante la introducción de un nombre
+	 * @param nombre (Vivienda a añadir)
+	 * @return (Devuelve la vivienda en caso de que la encuentre y null en el caso contrario)
+	 *
+	 */
 	public Vivienda buscarNombreViv (String nombre){
 		
 		for (int i = 0; i < viviendas2.size(); i++){
@@ -34,7 +71,14 @@ public class ListaViviendas {
 		return null;
 		
 	}
-	
+
+	/**
+	 * Busca coincidencias y elimina en el array mediante la introducción de un nombre
+	 * @param nombre (Vivienda a añadir)
+	 * @return (Devuelve true si existe la vivienda con el nombre introducido y la elimina,
+	 * false si no la encuentra)
+	 *
+	 */
 	public boolean eliminarNombreViv (String nombre){
 		
 		int posicion = -1;
@@ -60,7 +104,11 @@ public class ListaViviendas {
 			return true;
 		
 	}
-	
+
+	/**
+	 * @return (Devuelve una cadena con los datos del objeto)
+	 *
+	 */
 	public String mostrarLV(){
 		
 		String cadena = "";
@@ -74,7 +122,10 @@ public class ListaViviendas {
 		return cadena;
 		
 	}
-	
+
+	/**
+	 * Vuelca el contenido del array en el fichero
+	 */
 	public void guardarViviendas () throws Exception{
 		
 		//Vivienda vivienda = new Vivienda (precio, nombre2, dimensiones, direccion2, estado, descripcion);
@@ -111,7 +162,10 @@ public class ListaViviendas {
 		}
 		
 	}
-	
+
+	/**
+	 * Vuelca el contenido del fichero en el array
+	 */
 	public void leerViviendas () throws Exception{
 		
 		//Vivienda vivienda = new Vivienda (precio, nombre2, dimensiones, direccion2, estado, descripcion);
