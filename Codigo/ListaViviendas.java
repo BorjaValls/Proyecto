@@ -52,7 +52,7 @@ public class ListaViviendas {
 
 	/**
 	 * Busca coincidencias en el array mediante la introducción de un nombre
-	 * @param nombre (Vivienda a añadir)
+	 * @param nombre (Nombre de la vivienda)
 	 * @return (Devuelve la vivienda en caso de que la encuentre y null en el caso contrario)
 	 *
 	 */
@@ -74,7 +74,7 @@ public class ListaViviendas {
 
 	/**
 	 * Busca coincidencias y elimina en el array mediante la introducción de un nombre
-	 * @param nombre (Vivienda a añadir)
+	 * @param nombre (Nombre de la vivienda)
 	 * @return (Devuelve true si existe la vivienda con el nombre introducido y la elimina,
 	 * false si no la encuentra)
 	 *
