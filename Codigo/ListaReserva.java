@@ -1,24 +1,61 @@
 import java.util.*;
 import java.io.*;
 
+/**
+ * Clase ListaReserva
+ *
+ * Contiene los métodos y las operaciones para la administrar el array de Reservas
+ * que utiliza el programa. Entre las operaciones que realiza se encuentran las de añadir,
+ * buscar y eliminar por código de reserva, mostrar la lista completa de reservas, leer y cargar
+ * en fichero los datos del array y generar un documento html.
+ *
+ * @author Borja Valls García
+ * @version 1.1
+ */
+
 public class ListaReserva {
-	
+
+	/**
+	 * Array (o lista) donde se almacenan las reservas
+	 */
 	private ArrayList <Reserva> reserva;
+
+	/**
+	 * Carpeta global donde se guardan los ficheros
+	 */
 	private static final String RUTA = "./Ficheros/";
+
+	/**
+	 * Fichero donde se guardan y se lee los datos
+	 */
 	private static final String freservas = "freservas.txt";
-	
+
+	/**
+	 * Inicializa el objeto y todos los elementos asociados.
+	 */
 	public ListaReserva (){
 		
 		reserva = new ArrayList ();
 		
 	}
-	
+
+	/**
+	 * Guarda la reserva introducida en el array
+	 * @param x (Reserva a añadir)
+	 *
+	 */
 	public void anyadir (Reserva x){
 		
 		reserva.add(x);
 		
 	}
-	
+
+	/**
+	 * Busca coincidencias en el array mediante la introducción de un nombre
+	 * @param id (Código a buscar)
+	 * @return (Devuelve la vivienda en caso de que la encuentre y null en el caso contrario)
+	 *
+	 */
 	public Reserva buscarCodReserva (int id){
 		
 		for (int i = 0; i < reserva.size(); i++){
@@ -34,7 +71,14 @@ public class ListaReserva {
 		return null;
 		
 	}
-	
+
+	/**
+	 * Busca coincidencias y elimina en el array mediante la introducción de un nombre
+	 * @param id (Código a buscar)
+	 * @return (Devuelve true si existe la reserva con el código introducido y la elimina,
+	 * false si no la encuentra)
+	 *
+	 */
 	public boolean eliminarCodReserva (int id){
 		
 		int posicion = -1;
@@ -60,7 +104,11 @@ public class ListaReserva {
 			return true;
 		
 	}
-	
+
+	/**
+	 * @return (Devuelve una cadena con los datos del objeto)
+	 *
+	 */
 	public String mostrarLR(){
 		
 		String cadena = "";
@@ -74,7 +122,10 @@ public class ListaReserva {
 		return cadena;
 		
 	}
-	
+
+	/**
+	 * Vuelca el contenido del array en el fichero
+	 */
 	public void guardarReservas () throws Exception{
 		
 		//Reserva reserva = new Reserva (pago, detalles, buscarVivienda2);
@@ -108,7 +159,12 @@ public class ListaReserva {
 		}
 		
 	}
-	
+
+	/**
+	 * Vuelca el contenido del fichero en el array
+	 * @param lista (Lista de viviendas para vilcular a la reserva)
+	 *
+	 */
 	public void leerReservas (ListaViviendas lista) throws Exception{
 		
 		//Reserva reserva = new Reserva (pago, detalles, buscarVivienda2);
@@ -148,7 +204,12 @@ public class ListaReserva {
 		}
 		
 	}
-	
+
+	/**
+	 * Escribe en un archivo la cadena con la plantilla del documento en HTML.
+	 * @param reserva (Reserva de la que queremos generar el documento)
+	 *
+	 */
 	public void generarReserva (Reserva reserva) throws Exception{
 		
 		try{
