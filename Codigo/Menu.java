@@ -5,6 +5,22 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Clase Menu
+ *
+ * Esta es la interfaz principal del programa. Contiene todos los menús y submenús para acceder
+ * a las funciones del programa de una forma visual para el usuario.
+ * Cuando se inicia el programa se lee el contenido que hay en cada fichero y se cargan a los arrays,
+ * así que el programa puede ya contener datos en sus arrays o puede estar vacío.
+ * Hay 5 submenús principales, cada uno con varios submenús dependiendo de la acción
+ * que se desee hacer.
+ * Cada vez que se incorpora un elemento al array éste se escribe en los ficheros.
+ * Para salir del programa se debe pulsar la tecla 0.
+ *
+ * @author Borja Valls García
+ * @version 1.1
+ */
+
 public class Menu {
 
 	public static void main (String[] args) throws Exception{
@@ -174,6 +190,12 @@ public class Menu {
 											salir3 = true;
 										
 										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
+										break;
 										
 									}
 									
@@ -258,6 +280,12 @@ public class Menu {
 										
 											salir4 = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -423,6 +451,12 @@ public class Menu {
 											salirC = true;
 										
 										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
+										break;
 										
 									}
 									
@@ -507,6 +541,12 @@ public class Menu {
 										
 											salir4c = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -678,6 +718,12 @@ public class Menu {
 											salir3e = true;
 										
 										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
+										break;
 										
 									}
 									
@@ -762,6 +808,12 @@ public class Menu {
 										
 											salir4e = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -918,6 +970,12 @@ public class Menu {
 											}else System.out.println("El DNI no existe");
 										
 										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
+										break;
 										
 									}
 									
@@ -965,6 +1023,12 @@ public class Menu {
 										
 											salir4f = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -1014,6 +1078,12 @@ public class Menu {
 										
 											salir4g = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -1148,6 +1218,12 @@ public class Menu {
 											salirR2 = true;
 										
 										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
+										break;
 										
 									}
 									
@@ -1194,6 +1270,12 @@ public class Menu {
 										
 											salir5r = true;
 										
+										break;
+
+										default:
+
+											System.out.println("Input no valido");
+
 										break;
 										
 									}
@@ -1257,7 +1339,7 @@ public class Menu {
 				
 				case 0:
 				
-					System.out.println("Salimos");
+					System.out.println("Gracias por utilizar el programa!!");
 					salir = true;
 				
 				break;
