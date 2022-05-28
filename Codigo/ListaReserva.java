@@ -181,12 +181,16 @@ public class ListaReserva {
 
 					tokens = new StringTokenizer(cadena, "|");
 
-					pago = (String)tokens.nextToken();
-					detalles = (String)tokens.nextToken();
-					vivi = (String)tokens.nextToken();
-					Vivienda vivienda = lista.buscarNombreViv(vivi);
-
-					reserva.add(new Reserva(pago, detalles, vivienda));
+					String pago1 = (String)tokens.nextToken();
+					String detalles1 = (String)tokens.nextToken();
+					String vivi1 = (String)tokens.nextToken();
+					
+					//Por alguna razón que no sé explicar, vivienda1 siempre devuelve nulo
+					//asi que para evitar que el programa crashee lo dejo así
+					//la lectura la hace bien pero no carga ninguna vivienda junto a la reserva
+					Vivienda vivienda1 = lista.buscarNombreViv(vivi1);
+					if (vivienda1 != null)
+					reserva.add(new Reserva(pago1, detalles1, vivienda1));
 
 				}
 
@@ -212,11 +216,19 @@ public class ListaReserva {
 	 */
 	public void generarReserva (Reserva reserva) throws Exception{
 		
-		try{
+		File f = null;
+		FileWriter fw = null;
+		BufferedWriter bw = null;
 		
-			File f = new File ("./Reservas/"+reserva.getCodRerserva()+".html");
-			FileWriter fw = new FileWriter(f);
-			BufferedWriter bw= new BufferedWriter(fw);
+		try{
+			
+			reserva.setImporte();
+			String numero = String.valueOf(reserva.getCodRerserva());
+			String path = "./Reservas/"+numero+".html";
+		
+			f = new File (path);
+			fw = new FileWriter(f);
+			bw = new BufferedWriter(fw);
 
 			bw.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 Transitional//EN\">\n" +
 					"<html>\n" +
@@ -265,8 +277,8 @@ public class ListaReserva {
 					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
 					"<font face=\"Arial, sans-serif\"><font size=\"3\" style=\"font-size: 13pt\">Esta\n" +
 					"es la factura por la estancia en "+reserva.getViv().getNombre()+" durante la\n" +
-					"duración de "+reserva.getDuracion()+" noches, en la dirección" +reserva.getViv().getDireccion() +"\n" +
-					", por una cantidad de "+reserva.getImporte() +"euros. El\n" +
+					"duración de "+reserva.getDuracion()+" noches, en la dirección " +reserva.getViv().getDireccion() +"\n" +
+					", por una cantidad de "+reserva.getImporte() +" euros. El\n" +
 					"pago de este será mediante "+reserva.getTipoPago()+".</font></font></p>\n" +
 					"<p style=\"font-weight: normal; line-height: 100%; margin-bottom: 0in\">\n" +
 					"<br/>\n" +
@@ -349,6 +361,13 @@ public class ListaReserva {
 					"</p>\n" +
 					"</body>\n" +
 					"</html>");
+					
+				if (bw != null){
+			
+					bw.close();
+					fw.close();
+				
+				}
 			
 		}catch(IOException e){
 			
