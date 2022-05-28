@@ -7,7 +7,7 @@ import java.io.*;
  * Contiene los métodos y las operaciones para la administrar el array de Reservas
  * que utiliza el programa. Entre las operaciones que realiza se encuentran las de añadir,
  * buscar y eliminar por código de reserva, mostrar la lista completa de reservas, leer y cargar
- * en fichero los datos del array y generar un documento html.
+ * en fichero los datos del array y generar un documento HTML.
  *
  * @author Borja Valls García
  * @version 1.1
@@ -26,7 +26,7 @@ public class ListaReserva {
 	private static final String RUTA = "./Ficheros/";
 
 	/**
-	 * Fichero donde se guardan y se lee los datos
+	 * Fichero donde se guardan y se leen los datos
 	 */
 	private static final String freservas = "freservas.txt";
 
@@ -51,7 +51,7 @@ public class ListaReserva {
 	}
 
 	/**
-	 * Busca coincidencias en el array mediante la introducción de un nombre
+	 * Busca coincidencias en el array mediante la introducción de un código
 	 * @param id (Código a buscar)
 	 * @return (Devuelve la vivienda en caso de que la encuentre y null en el caso contrario)
 	 *
@@ -176,28 +176,28 @@ public class ListaReserva {
 			BufferedReader br = new BufferedReader(fr);
 			StringTokenizer tokens;
 			String cadena, pago, detalles, vivi;
+
+				while ( (cadena = br.readLine()) != null){
+
+					tokens = new StringTokenizer(cadena, "|");
+
+					pago = (String)tokens.nextToken();
+					detalles = (String)tokens.nextToken();
+					vivi = (String)tokens.nextToken();
+					Vivienda vivienda = lista.buscarNombreViv(vivi);
+
+					reserva.add(new Reserva(pago, detalles, vivienda));
+
+				}
+
+				if (br != null){
+
+					br.close();
+					fr.close();
+
+				}
 			
-			while ( (cadena = br.readLine()) != null){
-				
-				tokens = new StringTokenizer(cadena, "|");
-				
-				pago = (String)tokens.nextToken();
-				detalles = (String)tokens.nextToken();
-				vivi = (String)tokens.nextToken();
-				Vivienda vivienda = lista.buscarNombreViv(vivi);
-				
-				reserva.add(new Reserva(pago, detalles, vivienda));
-				
-			}
-			
-			if (br != null){
-			
-				br.close();
-				fr.close();
-			
-			}
-			
-		}catch(IOException e){
+		}catch(Exception e){
 			
 			e.printStackTrace();
 			

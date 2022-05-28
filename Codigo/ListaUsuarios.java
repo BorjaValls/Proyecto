@@ -6,8 +6,8 @@ import java.io.*;
  *
  * Contiene los métodos y las operaciones para la administrar el array de Usuarios
  * que utiliza el programa. Entre las operaciones que realiza se encuentran las de añadir,
- * buscar y eliminar por código de reserva, mostrar la lista completa de reservas, leer y cargar
- * en fichero los datos del array y generar un documento html.
+ * buscar y eliminar por nombre y DNI, mostrar la lista completa de usuarios y leer y cargar
+ * en fichero los datos del array.
  *
  * @author Borja Valls García
  * @version 1.1
@@ -95,7 +95,11 @@ public class ListaUsuarios {
 		
 	}
 	
-	/*public Usuario buscarID (int id){
+	/*
+	/**
+	 * @deprecated
+	 *
+	public Usuario buscarID (int id){
 		
 		for (int i = 0; i < usuarios.size(); i++){
 			
@@ -332,7 +336,7 @@ public class ListaUsuarios {
 			
 			}
 			
-		}catch(IOException e){
+		}catch(Exception e){
 			
 			e.printStackTrace();
 			

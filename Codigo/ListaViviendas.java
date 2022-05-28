@@ -26,7 +26,7 @@ public class ListaViviendas {
 	private static final String RUTA = "./Ficheros/";
 
 	/**
-	 * Fichero donde se guardan y se lee los datos
+	 * Fichero donde se guardan y se leen los datos
 	 */
 	private static final String fviviendas = "fviviendas.txt";
 
@@ -201,7 +201,7 @@ public class ListaViviendas {
 			
 			}
 			
-		}catch(IOException e){
+		}catch(Exception e){
 			
 			e.printStackTrace();
 			

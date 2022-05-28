@@ -304,7 +304,7 @@ public class ListaClientes {
 			
 			}
 			
-		}catch(IOException e){
+		}catch(Exception e){
 			
 			e.printStackTrace();
 			
