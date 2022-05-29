@@ -209,6 +209,7 @@ public class Menu {
 									
 									do{
 										
+										listaUsuarios.guardarUsuarios();
 										System.out.println("\n==============================================\n");
 										System.out.println("ESTE ES EL MENU PARA ELIMINAR USUARIOS\n");
 										//System.out.println("1. Eliminar por ID");
@@ -470,6 +471,7 @@ public class Menu {
 									
 									do{
 										
+										listaClientes.guardarClientes();
 										System.out.println("\n==============================================\n");
 										System.out.println("ESTE ES EL MENU PARA ELIMINAR CLIENTES\n");
 										//System.out.println("1. Eliminar por ID");
@@ -738,6 +740,7 @@ public class Menu {
 									
 									do{
 										
+										listaEmpleados.guardarEmpleados();
 										System.out.println("\n==============================================\n");
 										System.out.println("ESTE ES EL MENU PARA ELIMINAR EMPLEADOS\n");
 										//System.out.println("1. Eliminar por ID");
@@ -1015,7 +1018,7 @@ public class Menu {
 												
 												}else
 												
-													System.out.println("No existe ninguna vivienda con ese ID");
+													System.out.println("No existe ninguna vivienda con ese nombre");
 											
 											break;
 											
@@ -1045,6 +1048,7 @@ public class Menu {
 									
 									do{
 										
+										listaViviendas.guardarViviendas();
 										System.out.println("\n==============================================\n");
 										System.out.println("ESTE ES EL MENU PARA ELIMINAR VIVIENDA\n");
 										System.out.println("1. Eliminar por nombre");
@@ -1241,6 +1245,7 @@ public class Menu {
 									
 									do{
 										
+										listaReservas.guardarReservas();
 										System.out.println("\n==============================================\n");
 										System.out.println("ESTE ES EL MENU PARA ELIMINAR RESERVAS\n");
 										System.out.println("1. Eliminar por ID");
@@ -1337,7 +1342,6 @@ public class Menu {
 		}catch (Exception e){
 			
 			System.out.println("Algo ha salido mal, intentar otra vez");
-			e.printStackTrace();
 			
 		}
 		
