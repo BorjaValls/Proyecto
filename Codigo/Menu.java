@@ -39,10 +39,17 @@ public class Menu {
 		listaClientes.leerClientes();
 		listaEmpleados.leerEmpleados();
 		listaViviendas.leerViviendas();
-		listaReservas.leerReservas(listaViviendas);
+		//listaReservas.leerReservas(listaViviendas);
+		
+		Vivienda buscarVivienda444 = listaViviendas.buscarNombreViv("Casa Borja");
+		Vivienda buscarVivienda4444 = listaViviendas.buscarNombreViv("Piso San Luis");
+		Vivienda buscarVivienda44 = listaViviendas.buscarNombreViv("La alegre");
+		listaUsuarios.buscarNombre("Borja").anyadirViv(buscarVivienda444);
+		listaUsuarios.buscarNombre("Borja").anyadirViv(buscarVivienda4444);
+		listaUsuarios.buscarNombre("Carlos").anyadirViv(buscarVivienda44);
 		
 		try{
-		
+			
 			do{
 				
 				System.out.println("\n==============================================\n");
@@ -872,18 +879,6 @@ public class Menu {
 							System.out.println("");
 							
 							switch(opcion4){
-								
-								case 5:
-									Vivienda casa1 = new Vivienda (50.21, "Casa Pedro", "120 m2", "camino1", "ocupado", "descripcion1");
-									Vivienda casa2 = new Vivienda (60.09, "Casa Borja", "110 m2", "camino2", "listo", "descripcion2");
-									Vivienda casa3 = new Vivienda (41.88, "Apartemento Alto", "115 m2", "camino3", "listo", "descripcion3");
-									listaViviendas.anyadir(casa1);
-									listaViviendas.anyadir(casa2);
-									listaViviendas.anyadir(casa3);
-									listaUsuarios.buscarNombre("Borja").anyadirViv(casa1);
-									listaUsuarios.buscarNombre("Borja").anyadirViv(casa2);
-									listaUsuarios.buscarNombre("Borja").anyadirViv(casa3);
-								break;
 								
 								case 1:
 								
