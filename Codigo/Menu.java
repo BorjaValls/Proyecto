@@ -1169,8 +1169,9 @@ public class Menu {
 									System.out.println("\nIntroduce el dia de salida en formato dd/MM/yyyy");
 									String fin = teclado.next();
 									reserva.setFinal(fin);
-									reserva.setImporte();
 									reserva.setDuracion();
+									reserva.setImporte();
+									
 									
 									System.out.println("\nReserva creada con exito");
 									System.out.println("\nReserva generada: \n\n" +reserva.mostrarReserva());

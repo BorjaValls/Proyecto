@@ -141,6 +141,7 @@ public class Reserva {
 		
 		importe = resviv.getPrecio() * duracion;
 		
+		
 	}
 
 	/**

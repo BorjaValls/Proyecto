@@ -1,0 +1,3 @@
+Medio|Administrativo|866123456|María|87654321Z|Calle Uno 1, pta 1 Valencia|ES01 4321 8765 12 2345234522|email1@email.com|Mujer
+Alto|Director|890546231|Jose|73829310L|Calle Dos 2, pta 2 Alicante|ES91 5678 2131 90 9876543210|email2@email.com|Hombre
+Medio|Administrativo|836466573|Juan|87654321Z|Calle Tres 3, pta 3 Castellón|ES25 2356 9643 57 9182736456|email3@email.com|Hombre

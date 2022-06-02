@@ -22,3 +22,9 @@ La carpeta Test guarda algunos ejemplos de generación de JUnit y la clase que u
 en las estapas tempranas del proyecto.
 La carpeta Reservas guarda los documentos generados automaticamente. Contiene algunas pruebas.
 La carpeta Ficheros guarda los ficheros correspondientes a las clases del programa. Contienen algunos ejemplos.
+
+
+Hay un ligero fallo en el código que he pasado por alto.
+El set del importe y de la duración estan en el orden incorrecto en la entrega del .jar
+De esta forma cuando la reserva aparece por pantalla no detalla el importe total, pero en el documento HTML
+sí que aparece por eso no lo había notado.
